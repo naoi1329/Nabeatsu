@@ -26,10 +26,18 @@ class ViewController: UIViewController {
         }
         
         // 問題2: 1の位が3かどうか調べる
-        
+        if number % 10 == 0 {
+            return true
+        }
         // 問題3: 10の位が3かどうか調べる
-
+        if number / 10 % 10 == 0 {
+            return true
+        }
+        
         // 問題4: 3がつくかどうか調べる
+        if String(number).contains("3") {
+            return true
+        }
         // 問題4をやるときは問題3と問題2の答えを消してから書こう
 
         
